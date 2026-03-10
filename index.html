@@ -1,39 +1,181 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
-<header>
-	<title>
-		thea.boom
-	</title>
-</header>
+<head>
+    <title>thea.boom</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: #f9ecee; /* Soft Rose Background */
+            color: #232946;
+            text-align: center; /* Centers most text by default */
+        }
+
+        /* Navigation Bar */
+        .header-bg {
+            background-color: #eebbc3; /* Dusty Pink */
+            display: flex;
+            flex-direction: column; /* Stacked for a clean centered look */
+            align-items: center;
+            padding: 20px 0px;
+            border-bottom: 2px solid #b85c7c;
+        }
+
+        .header-bg h1 {
+            margin: 10px 0px;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #232946;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Container for Spacing */
+        .container {
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers items inside the section */
+        }
+
+        h1 { font-size: 36px; color: #b85c7c; }
+        h2 { font-size: 26px; color: #b85c7c; }
+        h3 { font-size: 22px; }
+        p { 
+            font-size: 16px; 
+            line-height: 26px; 
+            max-width: 700px; 
+            margin: 15px 0px; 
+        }
+
+        /* Image Styling */
+        img {
+            margin: 20px 0px;
+            border-radius: 15px;
+            border: 3px solid #ffffff;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .hobby-img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .school-logo {
+            width: 120px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .social-icon {
+            width: 50px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
 
 <body>
-	<div>
-	<img src="logo">
-	<h1> ALTHEAs PORTFOLIO </h1>
-	<nav>
-		<a href="ABOUT"> ABOUT </a>
-		<a href="EDUCATION"> EDUCATION </a>
-		<a href="PROJECTS"> MY PROJECTS </a>
-		<a href="CONTACT"> CONTACT ME! </a>
-	</nav>
-	</div>
-	
-	<img src="my photo">
-	<h2> HELLO! MY NAME IS ALTHEA M. CASTRENCE </h2>
-	<p> ICT Student </p>
-	
-	<h3> ABOUT ME </h3>
-	<p> I am an ICT student passionate about how technology solves everyday problems. I enjoy learning about everything from hardware to software, and I’m dedicated to building practical, digital solutions. I’m always looking to expand my skills and stay updated with the latest tech trends.
-	</p>
-	<img src="pict. hobbies">
-	<p> Beyond my technical studies, I enjoy graphic design using tools like Canva and other creative apps. I love taking complex information and turning it into clean, visually engaging layouts. This hobby helps me bring a creative perspective to my ICT projects, ensuring that the digital solutions I work on are not only functional but also user-friendly and well-designed.
-	</p>
-	
-	<!-- about me -->
-	<h1> GRAPHIC SKILLS </h1>
-	<p> My skills in graphic design and Canva give me a unique advantage as an ICT student. I don’t just understand how technology works; I know how to make it look professional and easy to use. This allows me to create digital solutions that are both functional and visually engaging, helping my technical projects stand out with a polished, user-friendly design.
-	</p>
-	<img src="SKILL NO.1">
+    <div class="header-bg">
+        <img src="https://via.placeholder.com/60/b85c7c/ffffff?text=A" style="width: 60px; border: none;">
+        <h1>ALTHEA'S PORTFOLIO</h1>
+        <nav>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#EDUCATION">EDUCATION</a>
+            <a href="#PROJECTS">MY PROJECTS</a>
+            <a href="#CONTACT">CONTACT</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400" class="profile-pic">
+            <h2>HELLO! MY NAME IS ALTHEA M. CASTRENCE</h2>
+            <p><strong>ICT Student & Creative Designer</strong></p>
+        </section>
+
+        <section id="ABOUT">
+            <h1>ABOUT ME</h1>
+            <p>I am an ICT student passionate about how technology solves everyday problems. I’m dedicated to building practical, digital solutions and staying updated with the latest tech trends.</p>
+            
+            <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=500" class="hobby-img">
+            <p>Beyond technical studies, I enjoy graphic design using tools like Canva. I love turning complex info into clean layouts, ensuring digital solutions are both functional and user-friendly.</p>
+        </section>
+
+        <section id="PROJECTS">
+            <h1>GRAPHIC SKILLS</h1>
+            <p>My skills in Canva give me a unique advantage. I don’t just understand how technology works; I know how to make it look professional and easy to use for everyone.</p>
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=500" style="width: 500px;">
+        </section>
+
+        <section id="EDUCATION">
+            <h1>MY EDUCATION</h1>
+            
+            <div style="margin-bottom: 30px;">
+                <h2>LVCC</h2>
+                <p>Elementary Graduate - La Verdad Christian College</p>
+                <img src="https://via.placeholder.com/120?text=LVCC" class="school-logo">
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h2>Doña Asuncion Lee Integrated School</h2>
+                <p>Junior High School Graduate - DALIS</p>
+                <img src="https://via.placeholder.com/120?text=DALIS" class="school-logo">
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h2>Children of Fatima School Inc.</h2>
+                <p>Currently pursuing ICT at CFSI</p>
+                <img src="https://via.placeholder.com/120?text=CFSI" class="school-logo">
+            </div>
+        </section>
+
+        <section id="CONTACT">
+            <h1>GET IN TOUCH</h1>
+            <p>Feel free to reach out to me through my socials!</p>
+            
+            <div style="display: flex; justify-content: center; gap: 40px; margin-top: 20px;">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="social-icon">
+                    <h3>Facebook</h3>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="social-icon">
+                    <h3>Instagram</h3>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="social-icon">
+                    <h3>Email</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
 	
 	<!-- Education -->
 	<h1> MY EDUCATION </h1>
@@ -157,6 +299,7 @@
 	
 </body>
 </html>
+
 
 
 
